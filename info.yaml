@@ -2,7 +2,7 @@
 
 project:
   title:       "VGA Bouncing Logo"
-  author:      "jazmin rivas / kensy bautista"
+  author:      "Jazmin Nayeli / Kensy Bautista"
   discord:     ""
   description: "Bouncing 128x128 pixel logo on a 640x480 VGA display with color palette cycling on each wall bounce."
   language:    "Verilog"
