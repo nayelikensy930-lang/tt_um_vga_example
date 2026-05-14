@@ -1,20 +1,14 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+This project generates a VGA 640x480 signal displaying a 128x128 pixel bitmap logo that bounces around the screen. Each time the logo hits a wall, the color changes using a palette. The design includes a VGA sync generator, a bitmap ROM storing the logo pixels, and a color palette module.
+
+- `ui_in[0]` (cfg_tile): enables tile mode, where the logo repeats across the entire screen
+- `ui_in[1]` (cfg_color): enables color cycling on each bounce
 
 ## How to test
 
-Explain how to use your project
+Connect a VGA monitor using the TinyVGA PMOD on the output pins. Set the clock to 25.175 MHz. After reset, the logo will start bouncing. Toggle `ui_in[0]` to enable tile mode and `ui_in[1]` to enable color cycling.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+TinyVGA PMOD connected to the output pins.
